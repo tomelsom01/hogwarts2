@@ -11,9 +11,15 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>testing 123</h1>
+  <h1>ToucanTech</h1>
   <div class="card">
-    <h2>form</h2>
+    <form action="/register" method="POST">
+      @csrf
+      <input name="name" type="text" placeholder="Name">
+      <input name="email" type="text" placeholder="Email address">
+      <input name="school" type="text" placeholder="School">
+      <button>Register</button>
+    </form>
   </div>
 </body>
 </html>
